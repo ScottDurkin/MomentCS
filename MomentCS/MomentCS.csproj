@@ -2,18 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>0.0.1</Version>
+    <Version>0.0.1.1</Version>
     <Authors>Scott Durkin</Authors>
     <Company />
     <PackageProjectUrl>https://github.com/ScottDurkin/MomentCS</PackageProjectUrl>
     <PackageIcon>MomentCS.jpg</PackageIcon>
     <PackageIconUrl />
     <RepositoryUrl>https://github.com/ScottDurkin/MomentCS</RepositoryUrl>
-    <NeutralLanguage>english</NeutralLanguage>
+    <NeutralLanguage>English</NeutralLanguage>
     <PackageTags>time, date, moment, momentcs, time zone, days, seconds,</PackageTags>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Scott Durkin</Copyright>
     <PackageLicenseExpression></PackageLicenseExpression>
+    <Description>This Package is in development.</Description>
+    <AssemblyVersion>0.0.1.1</AssemblyVersion>
+    <FileVersion>0.0.1.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
