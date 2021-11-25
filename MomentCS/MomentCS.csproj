@@ -13,7 +13,7 @@
     <PackageTags>time, date, moment, momentcs, time zone, days, seconds,</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Copyright>Scott Durkin</Copyright>
-    <PackageLicenseExpression>https://github.com/ScottDurkin/MomentCS/blob/master/LICENSE</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
