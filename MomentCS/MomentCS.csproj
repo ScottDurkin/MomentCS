@@ -5,6 +5,22 @@
     <Version>0.0.1</Version>
     <Authors>Scott Durkin</Authors>
     <Company />
+    <PackageProjectUrl>https://github.com/ScottDurkin/MomentCS</PackageProjectUrl>
+    <PackageIcon>MomentCS.jpg</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/ScottDurkin/MomentCS</RepositoryUrl>
+    <NeutralLanguage>english</NeutralLanguage>
+    <PackageTags>time, date, moment, momentcs, time zone, days, seconds,</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Scott Durkin</Copyright>
+    <PackageLicenseExpression>https://github.com/ScottDurkin/MomentCS/blob/master/LICENSE</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Users\Scott\Pictures\MomentCS.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
