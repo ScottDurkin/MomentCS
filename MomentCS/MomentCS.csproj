@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>0.0.1.1</Version>
+    <Version>0.0.1.2</Version>
     <Authors>Scott Durkin</Authors>
     <Company />
     <PackageProjectUrl>https://github.com/ScottDurkin/MomentCS</PackageProjectUrl>
@@ -15,8 +15,8 @@
     <Copyright>Scott Durkin</Copyright>
     <PackageLicenseExpression></PackageLicenseExpression>
     <Description>This Package is in development.</Description>
-    <AssemblyVersion>0.0.1.1</AssemblyVersion>
-    <FileVersion>0.0.1.1</FileVersion>
+    <AssemblyVersion>0.0.1.2</AssemblyVersion>
+    <FileVersion>0.0.1.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,6 +24,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Date\" />
   </ItemGroup>
 
 </Project>
