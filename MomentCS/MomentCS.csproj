@@ -14,9 +14,14 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Scott Durkin</Copyright>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <Description>This Package is in development.</Description>
+    <Description>MomentCS is a date &amp; time manipulation library for .NET Applications. It is packed with tons of preset formatting, timezone calculations and sorting functionality.</Description>
     <AssemblyVersion>0.0.1.2</AssemblyVersion>
     <FileVersion>0.0.1.2</FileVersion>
+    <PackageReleaseNotes>&gt; Get todays date
+&gt; Get beginning &amp; end of month date
+&gt; Get Beginning &amp; end of year date
+&gt; Timezone offsets
+&gt; Date formats</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
