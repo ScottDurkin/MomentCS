@@ -6,6 +6,12 @@ namespace MomentCS
 {
     public static class Moment
     {
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //  SECTION: Date Functions
+        //  PURPOSE: All functions in relation to MomentCS Dates.
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         /// <summary>
         /// Gets todays date in the number of days since 01/01/1900. Default Time is UTC.
         /// </summary>
@@ -50,6 +56,45 @@ namespace MomentCS
             TimeSpan returnDate = eom - start;
 
             return (int)returnDate.TotalDays;
+        }
+
+        /// <summary>
+        /// Get the date stamp for the start of the year.
+        /// </summary>
+        /// <param name="pDate">Date you want to get the start of the year.</param>
+        /// <returns>Start of year date as int.</returns>
+        public static int GetBOY(int pDate)
+        {
+            DateTime start = DateTime.Parse(InternalDefinitions.StartDate);
+            DateTime Date = start.AddDays(pDate);
+
+            var boy = new DateTime(Date.Year, 1, 1);
+            TimeSpan returnDate = boy - start;
+
+            return (int)returnDate.TotalDays;
+        }
+
+        /// <summary>
+        /// Get the date stamp for the end of the year.
+        /// </summary>
+        /// <param name="pDate"></param>
+        /// <returns>End of year date as int.</returns>
+        public static int GetEOY(int pDate)
+        {
+            DateTime start = DateTime.Parse(InternalDefinitions.StartDate);
+            DateTime Date = start.AddDays(pDate);
+
+            var eoym = new DateTime(Date.Year, 12, 1);
+            var eoy = eoym.AddMonths(1).AddDays(-1);
+            TimeSpan returnDate = eoy - start;
+
+            return (int)returnDate.TotalDays;
+        }
+
+
+        public static int GetDaysDifference(DateTime StartDate, DateTime EndDate)
+        {
+            return Convert.ToInt32((EndDate - StartDate).TotalDays);
         }
 
         /// <summary>

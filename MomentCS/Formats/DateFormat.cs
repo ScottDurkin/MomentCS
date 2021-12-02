@@ -8,56 +8,51 @@ namespace MomentCS.Formats
 {
     public class DateFormat
     {
-        /// <summary>
-        /// dd/MM/yyyy
-        /// </summary>
+        /// <summary>Example: dd/MM/yyyy</summary>
         public const String Primary = "dd/MM/yyyy";
-
-        /// <summary>
-        /// MM/dd/yyyy
-        /// </summary>
+        /// <summary>Example: MM/dd/yyyy</summary>
         public const String Secondary = "MM/dd/yyyy";
 
 
 
 
-        /// <summary>
-        /// 01
-        /// </summary>
+        /// <summary>Example: 01</summary>
         public const String Day = "dd";
-        /// <summary>
-        /// Monday
-        /// </summary>
+        /// <summary>Example: Monday</summary>
         public const String DayNameLong = "dddd";
-        /// <summary>
-        /// Mon
-        /// </summary>
+        /// <summary>Example: Mon</summary>
         public const String DayNameShort = "ddd";
 
 
 
-        /// <summary>
-        /// 01
-        /// </summary>
+        /// <summary>Example: 01</summary>
         public const String Month = "MM";
-        /// <summary>
-        /// January
-        /// </summary>
+        /// <summary>Example: January</summary>
         public const String MonthNameLong = "MMMM";
-        /// <summary>
-        /// Jan
-        /// </summary>
+        /// <summary>Example: Jan</summary>
         public const String MonthNameShort = "MMM";
 
 
 
-        /// <summary>
-        /// 2021
-        /// </summary>
+        /// <summary>Example: 2021</summary>
         public const String Year = "yyyy";
-        /// <summary>
-        /// 21
-        /// </summary>
+        /// <summary>Example: 21</summary>
         public const String YearShort = "yy";
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        //  SECTION: Some predefined date formats
+        //  PURPOSE: Less code to write, more reusable code.
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        
+        /// <summary>Example: 01/01/2021</summary>
+        public const String DDMMYYYY = "dd/MM/yyyy";
+        /// <summary>Example: 01/01</summary>
+        public const String DDMM = "dd/MM";
+        /// <summary>Example: 01/21</summary>
+        public const String MMYY = "MM/yy";
+        /// <summary>Example: 01/2021</summary>
+        public const String MMYYYY = "MM/yyyy";
+
     }
 }

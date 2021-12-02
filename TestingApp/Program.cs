@@ -36,7 +36,7 @@ namespace TestingApp
             int t = Moment.GetDateStamp();
 
             Console.WriteLine(t);
-            Console.WriteLine(Moment.FormatDate(t));
+            Console.WriteLine(Moment.FormatDate(t, DateFormat.Day + "/" + DateFormat.));
 
         }
     }
