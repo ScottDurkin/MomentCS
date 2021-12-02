@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="MomentCS">
+      <HintPath>..\MomentCS\bin\Release\net5.0\MomentCS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
