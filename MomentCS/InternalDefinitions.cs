@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MomentCS
 {
-    internal class Definitions
+    internal class InternalDefinitions
     {
         public const String StartDate = "01/01/1900";
     }
