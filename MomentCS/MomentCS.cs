@@ -109,5 +109,76 @@ namespace MomentCS
             DateTime answer = start.AddDays(Date);
             return answer.ToString(pFormat);
         }
+
+        /// <summary>
+        /// Format a DateTime.
+        /// </summary>
+        /// <param name="Date"></param>
+        /// <param name="pFormat"></param>
+        /// <returns>A formatted date based on the day DateTime. Default format date: dd/MM/yyyy</returns>
+        public static String FormatDate(DateTime DateTime, String pFormat = DateFormat.Primary)
+        {
+            DateTime start = DateTime.Parse(InternalDefinitions.StartDate);
+            return DateTime.ToString(pFormat);
+        }
+
+        /// <summary>
+        /// Format a date and time together however you would like.
+        /// </summary>
+        /// <param name="Date"></param>
+        /// <param name="Time"></param>
+        /// <param name="DateFormat"></param>
+        /// <param name="TimeFormat"></param>
+        /// <param name="TimeZoneOffset"></param>
+        /// <param name="ResultFormat"></param>
+        /// <returns></returns>
+        public static String FormatDateAndTime(int Date, int Time, String DateFormat = DateFormat.DDMMYYYY, String TimeFormat = TimeFormat.hhmmss, int TimeZoneOffset = TimeZoneCS.UTC, String ResultFormat = MomentParm.DefaultDateTime)
+        {
+            String _date = FormatDate(Date, DateFormat);
+            String _time = FormatTime(Time, TimeZoneOffset, TimeFormat);
+
+            String Result = ResultFormat.Replace(MomentParm.Date, _date);
+            Result = Result.Replace(MomentParm.Time, _time);
+
+            return Result;
+        }
+
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //  SECTION: Time Functions
+        //  PURPOSE: All functions in relation to MomentCS Time.
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /// <summary>
+        /// This gets a MomentCS time stamp using UTC.
+        /// </summary>
+        /// <returns>UTC time stamp in seconds from midnight</returns>
+        public static int GetTimeStamp()
+        {
+            var dateTime = DateTime.UtcNow;
+            var midnight2Day = new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, 00, 00, 00);
+
+            TimeSpan secSinceMidnight = dateTime - midnight2Day;
+            int t = (int)secSinceMidnight.TotalSeconds;
+            return t;
+        }
+
+        /// <summary>
+        /// Format Time Stamp to HH:mm:ss
+        /// </summary>
+        /// <param name="pTime">TimeStamp</param>
+        /// <param name="pTimeZoneOffset">Time Zone Offset - Default utc</param>
+        /// <param name="pFormat">Add a custom formatter</param>
+        /// <returns>Formatted Time Stamp</returns>
+        public static String FormatTime(int pTime, int pTimeZoneOffset = TimeZoneCS.UTC, String pFormat = TimeFormat.hhmmss)
+        {
+            var dateTime = DateTime.UtcNow;
+            var midnight2Day = new DateTime(dateTime.Year, dateTime.Month, dateTime.Day, 00, 00, 00);
+
+            var t = midnight2Day.AddSeconds(pTime + pTimeZoneOffset);
+
+            return t.ToString(pFormat);
+        }
+
     }
 }

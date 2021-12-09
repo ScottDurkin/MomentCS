@@ -33,10 +33,14 @@ namespace TestingApp
 
             //    //Console.WriteLine(String.Format("{0} - {1}", TimeZoneName, Offset));
             //}
-            int t = Moment.GetDateStamp();
+            int d = Moment.GetDateStamp();
+            int t = Moment.GetTimeStamp();
 
-            Console.WriteLine(t);
-            Console.WriteLine(Moment.FormatDate(t, DateFormat.Day + "/" + DateFormat.));
+            String dt = Moment.FormatDateAndTime(d, t, DateFormat.DDMMYYYY, TimeFormat.hhmmsstt, TimeZoneCS.UTC, "Todays Date: {Date}. Todays Time: {Time}");
+
+            Console.WriteLine("Date: " + d);
+            Console.WriteLine("Time: " + t);
+            Console.WriteLine(dt);
 
         }
     }
